@@ -13,6 +13,7 @@ import ServerBrowser from '../views/ServerBrowserView';
 import ConfigView from '../views/ConfigView';
 import RoutesView from '../views/RoutesView';
 import LoginView from '../views/LoginView';
+import TroubleshootView from '../views/TroubleshootingView';
 
 
 export interface View {
@@ -41,6 +42,7 @@ export const views: View[] = [
       subViews: [
         { name: 'Config', path: '/advanced/config', component: ConfigView, icon: TiSpanner },
         { name: 'Routes', path: '/advanced/routes', component: RoutesView, icon: CiRoute },
+        { name: 'Troubleshooting', path: '/troubleshooting', component: TroubleshootView, icon: TiCog, },
       ]
     },
     { component: SettingsView, path: '/settings', name: 'Settings', icon: TiCog, },
