@@ -19,7 +19,8 @@ use commands::{
     route_parser_command,
     route_decoder_command,
     fetch_available_dlls,
-    python_decoder_command
+    python_decoder_command,
+    arrange_maps_folder_command
 };
 
 
@@ -54,6 +55,7 @@ fn main() {
         route_decoder_command::decode_route,
         fetch_available_dlls::get_available_dlls,
         python_decoder_command::python_route_decoder,
+        arrange_maps_folder_command::arrange_maps_folder,
         
     ])
     .run(tauri::generate_context!())
